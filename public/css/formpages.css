@@ -1,0 +1,36 @@
+.navbar-block {
+    background-color: #7e2640;
+}
+
+.navbar-title {
+    font-family: "Kufam", cursive;
+}
+
+.form-card {
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.button-form {
+    font-family: 'Nunito', sans-serif;    
+    color: white;
+    background-color: #ca7d23;
+    transition: background-color 0.8s ease;
+}
+
+.button-form:hover {
+    color: white;
+    background-color: #9F194A;
+}
+
+.forgot-link {
+    font-weight: 700;
+    color: #9F194A;
+    text-decoration: underline;
+    transition: all 0.8s ease-in-out;
+}
+
+.forgot-link:hover {
+    color: #ca7d23;
+    text-decoration: underline;
+}
