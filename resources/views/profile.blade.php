@@ -30,9 +30,28 @@
                 </div>
                 <hr>
             </div>
-            <div class="profile-posts">
+            <div class="profile-posts-block">
                 <hr>
-                TESTING
+                <div class="profile-posts-content" id="bah">
+                    @foreach($user->posts as $post)
+                    <div class="post">
+                        <img src="/storage/{{ $post->image }}" alt="">
+                        <div class="post-atributes">
+                            <div class="post-stats">
+                                <div class="damage">
+                                    <i class="fas fa-skull-crossbones"></i> {{ $post->power }}
+                                </div>
+                                <div class="defence">
+                                    <i class="fas fa-shield-alt"></i> {{ $post->defence }}
+                                </div>
+                            </div>
+                            <div class="description">
+                                {{ $post->description }}
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>
