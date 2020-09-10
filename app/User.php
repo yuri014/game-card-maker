@@ -37,6 +37,21 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::created(function ($user) {
+            $user->profile()->create([
+                'title' => 'The Wizard of Card Games',
+                'description' => '_________',
+                'favoriteCardGame' => '_________',
+                'image' => '',
+                'link' => 'https://github.com/yuri014/'
+            ]);
+        });
+    }
+
     public function posts()
     {
         return $this->hasMany(Post::class)->orderBy('created_at', 'DESC');
