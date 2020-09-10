@@ -20,6 +20,7 @@ class CreateProfilesTable extends Migration
             $table->text('description')->nullable();
             $table->string('favoriteCardGame')->nullable();
             $table->string('link')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
 
             $table->index('user_id');
