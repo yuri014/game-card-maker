@@ -43,14 +43,19 @@
 }
 
 .profile-data {
-    margin-top: 4rem;
+    margin-top: 1rem;
+}
+
+.profile-edit {
+    margin-bottom: 1rem;
+    text-align: right;
 }
 
 .profile-title,
 .profile-description,
 .profile-favcardgame {
     border: 1px inset aliceblue;
-    padding: 0.4rem;
+    padding: 0.4rem 1.2rem;
     background-color: whitesmoke;
     border-radius: 4px;
     margin-bottom: 1rem;
