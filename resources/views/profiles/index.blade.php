@@ -11,9 +11,10 @@
                     </div>
                     <div class="profile-details">
                         <h5>{{ $user->username }}</h5>
-                        <h5>Cards Pack: 12</h5>
-                        <h5>Following: 500</h5>
-                        <h5>Followers: 400</h5>
+                        <h1>{{$follows}}</h1>
+                        <h5>Cards Pack: {{ $user->posts->count() }}</h5>
+                        <h5>Followers: {{ $user->profile->followers->count() }}</h5>
+                        <h5>Following: {{ $user->following->count() }}</h5>
                         <a href="{{ $user->profile->link }}" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
                 </div>
