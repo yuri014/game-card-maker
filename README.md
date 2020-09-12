@@ -1,4 +1,19 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Game Card Maker :black_joker:
+
+<p align="center">
+  <img src="https://img.shields.io/badge/-PHP-1C1C1C?style=flat&logo=PHP&logoColor=blue">
+    <img src="https://img.shields.io/badge/-Laravel-FFFFFF?style=flat&logo=Laravel&logoColor=red">
+  <img src="https://img.shields.io/badge/-React-1C1C1C?style=flat&logo=React&logoColor=blue">
+  <a href="https://www.linkedin.com/in/yuri-flores-53b2b41a4" >
+   <img src="https://img.shields.io/badge/-YuriFlores-blue?style=flat&logo=Linkedin&logoColor=white">
+  </a>
+</p>
+
+# :camera:
+
+<p align="center">
+  <img src="./landing.PNG" height="400" >
+</p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -6,6 +21,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
+
+<hr>
 
 ## About Laravel
 
