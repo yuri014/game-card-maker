@@ -24,13 +24,14 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/formpages.css') }}" rel="stylesheet">
     <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/timeline.css') }}" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark navbar-block shadow-sm">
             <div class="container">
-                <a class="navbar-brand navbar-title" href="{{ url('/') }}">
+                <a class="navbar-brand navbar-title" href="{{ url('/home') }}">
                     Game Card Maker <i class="fas fa-crown"></i>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
