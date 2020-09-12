@@ -11,7 +11,6 @@
                     </div>
                     <div class="profile-details">
                         <h5>{{ $user->username }}</h5>
-                        <h1>{{$follows}}</h1>
                         <h5>Cards Pack: {{ $user->posts->count() }}</h5>
                         <h5>Followers: {{ $user->profile->followers->count() }}</h5>
                         <h5>Following: {{ $user->following->count() }}</h5>
@@ -42,7 +41,7 @@
             </div>
             <div class="profile-posts-block">
                 <hr>
-                <div class="profile-posts-content" id="bah">
+                <div class="profile-posts-content">
                     @foreach($user->posts as $post)
                     <div class="post">
                         <img src="/storage/{{ $post->image }}" alt="">
