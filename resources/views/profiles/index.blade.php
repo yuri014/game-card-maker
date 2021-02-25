@@ -21,7 +21,7 @@
 
                     <div class="profile-edit">
                         @can('update', $user->profile)
-                        <a href="/profile/{{ $user->id }}/edit">Edit Profile {{$follows}}</a>
+                        <a href="/profile/{{ $user->id }}/edit">Edit Profile</a>
 
                         @endcan
                         <div id="follow-button" userId="{{ $user->id }}" follows="{{ $follows }}"></div>
