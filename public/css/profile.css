@@ -127,3 +127,18 @@
     margin-top: 4px;
     font-weight: 600;
 }
+
+.no-data{
+    margin-top: 7rem;
+}
+
+.no-data svg{
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .no-data h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}

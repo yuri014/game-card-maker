@@ -25,25 +25,36 @@
         }
 
         .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
+          margin-top: 40px;
+        }
+
+        .top-right a:last-child{
+            margin-left: 20px;
+            background: #2F2E41;
+            text-shadow: none;
+            color: #fff;
         }
 
         .links>a {
             color: #636b6f;
             padding: 10px 25px;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
             text-transform: uppercase;
             background-color: gainsboro;
             border-radius: 4px;
+            padding: 15px 50px;
+            transition: all 0.3s ease;
         }
 
-        .links>a:hover {
-            box-shadow: 0 1px 1px #0000008c;
+        .links>a:first-child:hover {
+            filter: brightness(95%)
+        }
+
+        .links>a:last-child:hover {
+            filter: brightness(105%)
         }
 
         .content {
@@ -88,7 +99,7 @@
 
         @media (min-width: 1100px) {
             .title {
-                margin-top: 80vh;
+                margin-top: 70vh;
             }
 
             .landing-card {
@@ -104,20 +115,6 @@
 
 <body>
     <div>
-        @if (Route::has('login'))
-        <div class="top-right links">
-            @auth
-            <a href="{{ url('/home') }}">Home</a>
-            @else
-            <a href="{{ route('login') }}">Login</a>
-
-            @if (Route::has('register'))
-            <a href="{{ route('register') }}">Register</a>
-            @endif
-            @endauth
-        </div>
-        @endif
-
         <div class="content">
             <div class="landing-card">
                 <svg width="921" height="648" viewBox="0 0 921 648" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,6 +183,19 @@
             <div class="title">
                 <h1>Card Game Maker <i class="fas fa-crown"></i></h1>
                 <h5>Easy way to make cards for your game.</h5>
+                @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                    <a href="{{ url('/home') }}">Home</a>
+                    @else
+                    <a href="{{ route('login') }}">Login</a>
+
+                    @if (Route::has('register'))
+                    <a href="{{ route('register') }}">Register</a>
+                    @endif
+                    @endauth
+                </div>
+                @endif
             </div>
         </div>
     </div>
