@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 
 function FollowButton(props) {
-    const [followState, setFollowState] = useState(props.follows);
+    const [followState, setFollowState] = useState();
+
+    useEffect(() => {
+        setFollowState(props.follows === 1 ? true : false);
+    }, []);
 
     function followUser() {
         axios
             .post(`/follow/${props.userId}`)
             .then(response => {
-                setFollowState(!props.follows);
+                setFollowState(!followState);
             })
             .catch(err => {
                 if (err.response.status == 401) {
