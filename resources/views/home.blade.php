@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        @if(empty($posts))
+        @if($posts->isEmpty())
         <div class="no-data">
             <h2>You haven't created any posts yet :(</h2>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
