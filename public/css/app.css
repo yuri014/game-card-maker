@@ -79,6 +79,12 @@ body {
   height: 100%;
 }
 
+.app,
+.app main{
+  height: 100%;
+  width: 100%;
+}
+
 .login-container,
 .register-container{
   height: 100%;
@@ -2670,45 +2676,24 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.btn:focus{
+  box-shadow: none;
+}
+
 .btn-primary {
+  background: #222;
   color: #fff;
-  background-color: #3490dc;
-  border-color: #3490dc;
+  border: none;
+  width: 200px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: none;
 }
 
 .btn-primary:hover {
+  filter: brightness(110%);
   color: #fff;
-  background-color: #227dc7;
-  border-color: #2176bd;
-}
-
-.btn-primary:focus,
-.btn-primary.focus {
-  color: #fff;
-  background-color: #227dc7;
-  border-color: #2176bd;
-  box-shadow: 0 0 0 0.2rem rgba(82, 161, 225, 0.5);
-}
-
-.btn-primary.disabled,
-.btn-primary:disabled {
-  color: #fff;
-  background-color: #3490dc;
-  border-color: #3490dc;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #2176bd;
-  border-color: #1f6fb2;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(82, 161, 225, 0.5);
 }
 
 .btn-secondary {

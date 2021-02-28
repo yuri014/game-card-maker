@@ -45,7 +45,7 @@
                         id="email" 
                         name="email" 
                         type="email"
-                        placeholder="Digite seu email"
+                        placeholder="Type your email"
                         class="@error('email') is-invalid @enderror"
                         value="{{ old('email') }}"
                         required autocomplete="email"
@@ -63,7 +63,7 @@
                     id="password"
                     name="password"
                     type="password"
-                    placeholder="Digite sua senha"
+                    placeholder="Type your password"
                     class="form-control @error('password') is-invalid @enderror"
                     required
                     autocomplete="current-password"
