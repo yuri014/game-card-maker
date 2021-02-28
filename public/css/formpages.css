@@ -78,6 +78,10 @@
   cursor: pointer;
 }
 
+.content-form form .content-button button.width-100{
+  width: 100%
+}
+
 .content-form form .content-button button:hover{
   filter: brightness(110%);
 }
@@ -92,13 +96,13 @@
   text-decoration: none;
 }
 
-.container .go-to-sign-up{
+.go-to-sign-up{
   right: 8rem;
   top: 2rem;
   position: absolute
 }
 
-.container .go-to-sign-up a{
+.go-to-sign-up a{
   text-decoration: none;
   color: #7e2640;
   font-weight: 600;
@@ -106,7 +110,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.container .go-to-sign-up a:hover{
+.go-to-sign-up a:hover{
   filter: brightness(120%);
 }
 
@@ -115,7 +119,7 @@
     margin-top: 3rem;
   }
 
-  .container .go-to-sign-up{
+  .go-to-sign-up{
     right: 1.5rem;
     top: 1.5rem;
   }

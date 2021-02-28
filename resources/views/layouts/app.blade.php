@@ -22,10 +22,11 @@
     <link href="{{ asset('css/formpages.css') }}" rel="stylesheet">
     <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
     <link href="{{ asset('css/timeline.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/reset-form.css') }}" rel="stylesheet">
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" @if(Route::getCurrentRoute()->getName() != 'profile.show' && Route::getCurrentRoute()->getName() != 'index') class="app" @endif>
         <nav class="navbar navbar-expand-md navbar-dark navbar-block shadow-sm">
             <div class="container">
                 <a class="navbar-brand navbar-title" href="{{ url('/home') }}">
