@@ -7,6 +7,9 @@
     display: flex;
     align-items: flex-start;
     justify-content: stretch;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    padding: 3rem;
 }
 
 .timeline-posts {
@@ -31,8 +34,8 @@
 }
 
 .timeline-post {
-    width: 20rem;
-    height: 24rem;
+    width: 14rem;
+    height: 20rem;
     border-radius: 4px;
     border: 4px groove #ca7d23;
     margin-bottom: 1rem;

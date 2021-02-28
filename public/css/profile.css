@@ -42,6 +42,11 @@
     color: #463030;
 }
 
+.profile-details svg{
+    width: 30px;
+    height: 30px;
+}
+
 .profile-data {
     margin-top: 1rem;
 }
