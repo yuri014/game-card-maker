@@ -26,7 +26,7 @@
 
 ## Participantes
 
-> Leonardo Vargas, Luís Henrique e Yuri do Nascimento Flores.
+> Leonardo Flores, Luís Henrique e Yuri do Nascimento Flores.
 
 ## About Laravel
 
