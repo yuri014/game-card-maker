@@ -28,6 +28,13 @@
 
 > Leonardo Flores, Luís Henrique e Yuri do Nascimento Flores.
 
+## Instalação
+
+- Rode `php artisan key:generate` para gerar uma chave.
+- Crie um arquivo database.sqlite dentro da pasta database.
+- Rode `php artisan migrate` para fazer a migration.
+- Rode `php artisan storage:link` para habilitar os uploads.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
